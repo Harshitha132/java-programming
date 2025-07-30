@@ -31,12 +31,27 @@ public class Solution {
         
          case '/':
                 g=a/b;
+                if(g==0)
+                {
+                    System.out.println("");
+                }
+                else
+                {
+                
                 System.out.println("Division of two number is "+g);
+                }
        break;
         
          case '%':
                 h=a%b;
+                if(h==0)
+                {
+                    System.out.println("");
+                }
+                else
+                {
                 System.out.println("Modulo of two number is "+h);
+                }
        break;
         default:
                 System.out.println("Invalid Input");
