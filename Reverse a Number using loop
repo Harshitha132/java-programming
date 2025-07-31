@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>0){
+            int reversed=0;
+           while (a> 0) {
+            int sum = a % 10;
+            reversed = reversed * 10 + sum;
+            a= a / 10;
+        }
+
+            
+            System.out.println(reversed);
+        }
+
+        else{
+            System.out.println("Invalid Input");
+        }
+        
+        
+    }
+}
